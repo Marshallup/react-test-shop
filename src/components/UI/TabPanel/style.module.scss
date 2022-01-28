@@ -1,0 +1,30 @@
+.tabPanel {
+	&__item {
+		margin-bottom: -1px;
+		&.active {
+			color: red;
+			.tabPanel__link {
+				cursor: default;
+				border-color: #ddd;
+				border-bottom-color: transparent;
+				&:hover {
+					color: #555;
+					background-color: white;
+				}
+			}
+		}
+	}
+	&__link {
+		margin-right: 2px;
+		cursor: pointer;
+		display: block;
+		padding: 10px 15px;
+		color: #555;
+		background-color: #fff;
+		border: 1px solid transparent;
+		border-bottom-color: #ddd;
+		&:hover {
+			background-color: #eee;
+		}
+	}
+}
